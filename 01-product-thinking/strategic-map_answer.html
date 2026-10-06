@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strategic Discovery Map</title>
+<style>
+:root { --ink:#172033; --muted:#596579; --line:#dfe5ee; --bg:#f4f7fb; --card:#fff; --blue:#2563eb; --blue-soft:#eaf1ff; --amber:#9a5b00; --amber-soft:#fff4d6; --green:#147a52; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Inter,Segoe UI,Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; }
+main { width:min(1120px, calc(100% - 32px)); margin:40px auto 64px; }
+.hero { padding:36px; border-radius:22px; color:#fff; background:linear-gradient(135deg,#173a8f,#2563eb 62%,#39a0ff); box-shadow:0 16px 36px rgba(23,58,143,.20); }
+.hero h1 { margin:0 0 8px; font-size:clamp(2rem,5vw,3.6rem); line-height:1.08; }
+.hero p { margin:0; max-width:760px; color:#eaf2ff; }
+.eyebrow { font-size:.78rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+section { margin-top:28px; padding:30px; background:var(--card); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px rgba(30,50,80,.06); }
+h2 { margin:0 0 18px; font-size:1.55rem; }
+h3 { margin:24px 0 10px; font-size:1.08rem; }
+p { margin:10px 0; }
+pre { overflow:auto; padding:22px; border-radius:14px; background:#101827; color:#eaf1ff; line-height:1.45; font-size:.9rem; border:1px solid #25334b; }
+.callout { padding:18px 20px; margin:16px 0; border-left:5px solid var(--blue); border-radius:10px; background:var(--blue-soft); }
+.answer { padding:18px 20px; border:1px solid #cbd9ff; border-radius:12px; background:#f7f9ff; }
+.answer strong { color:var(--blue); }
+.tension { padding:16px 18px; margin:10px 0; border-radius:12px; background:var(--amber-soft); color:#593700; }
+.grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+ul { padding-left:22px; }
+li { margin:7px 0; }
+table { width:100%; border-collapse:collapse; margin-top:16px; }
+th,td { padding:12px 14px; text-align:left; border:1px solid var(--line); vertical-align:top; }
+th { background:#eef3fb; }
+.takeaway { font-size:1.16rem; font-weight:700; color:#0d5138; background:#eaf8f2; border-left:5px solid var(--green); padding:19px 21px; border-radius:12px; }
+footer { text-align:center; margin-top:24px; color:var(--muted); font-size:.88rem; }
+@media (max-width:760px) { main { width:min(100% - 20px,1120px); margin-top:10px; } .hero,section { padding:22px; border-radius:15px; } .grid { grid-template-columns:1fr; } pre { font-size:.78rem; } }
+@media print { body { background:#fff; } main { width:100%; margin:0; } .hero { box-shadow:none; } section { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <div class="eyebrow">Module 1 · Lab 1</div>
+  <h1>Strategic Discovery Map</h1>
+  <p>Discovery groundwork for a mobile water-tracking app for busy adults aged 25–40 who know they should drink more, but often forget.</p>
+</header>
+
+<section>
+  <h2>1. Feature With No Clear 12-Week Strategic Rationale</h2>
+  <h3>Initial Feature Map</h3>
+  <pre><code>Water Tracking App
+├── Hydration Tracking
+│   ├── Log water intake
+│   ├── Quick-add buttons
+│   ├── Custom drink amounts
+│   └── Daily hydration history
+├── Goals
+│   ├── Daily water target
+│   ├── Personalized recommendations
+│   ├── Weekly progress tracking
+│   └── Goal adjustments
+├── Reminders
+│   ├── Scheduled notifications
+│   ├── Smart reminders based on habits
+│   └── Missed-goal alerts
+├── Insights &amp; Analytics
+│   ├── Hydration trends
+│   ├── Streak tracking
+│   ├── Milestone achievements
+│   └── Consumption reports
+├── Health Integrations
+│   ├── Apple Health integration
+│   ├── Google Fit integration
+│   └── Wearable device sync
+├── Social &amp; Motivation
+│   ├── Friend challenges
+│   ├── Leaderboards
+│   ├── Achievement badges
+│   └── Community groups
+└── Personalization
+    ├── Custom themes
+    ├── Bottle/container tracking
+    ├── Avatar customization
+    └── Home-screen widgets</code></pre>
+  <div class="answer"><strong>Answer: Avatar customization</strong><p>If an engineer asked why this should be a priority for the next 12 weeks, I could not give a strong strategic answer. It does not directly improve hydration outcomes, reduce logging friction, strengthen retention through a validated mechanism, or support a clear business goal. Without user evidence or measurable impact, it is a nice-to-have rather than a roadmap priority.</p></div>
+</section>
+
+<section>
+  <h2>2. Feature That Looks Correct but Has Zero Strategic Weight</h2>
+  <h3>User Needs, Features, and Potential Problems</h3>
+  <pre><code>Water Tracking App
+├── User Needs
+│   ├── Stay hydrated
+│   ├── Build healthy habits
+│   ├── Log water consumption easily
+│   ├── Understand hydration progress
+│   └── Receive reminders when forgetting to drink
+├── Core Features
+│   ├── Water Intake Logging
+│   │   ├── One-tap add glass
+│   │   ├── Custom amount entry
+│   │   ├── Different container sizes
+│   │   └── Drink history
+│   ├── Daily Hydration Goals
+│   │   ├── Personalized targets
+│   │   ├── Manual goal setting
+│   │   └── Goal progress indicator
+│   ├── Reminders &amp; Notifications
+│   │   ├── Scheduled reminders
+│   │   ├── Smart reminders
+│   │   └── Missed-goal alerts
+│   ├── Progress Tracking
+│   │   ├── Daily statistics
+│   │   ├── Weekly trends
+│   │   ├── Monthly reports
+│   │   └── Streak tracking
+│   └── Health Integrations
+│       ├── Apple Health
+│       ├── Google Fit
+│       └── Smartwatch support
+├── Motivation &amp; Engagement
+│   ├── Achievement badges
+│   ├── Milestones
+│   ├── Challenges
+│   ├── Social sharing
+│   └── Rewards system
+├── Personalization
+│   ├── Custom themes
+│   ├── Preferred units (ml/oz)
+│   ├── Bottle tracking
+│   └── Home-screen widgets
+└── Potential Problems
+    ├── Users forget to log drinks
+    ├── Notification fatigue
+    ├── Inaccurate intake data
+    ├── Limited long-term engagement
+    ├── Generic goals may not fit everyone
+    ├── Privacy concerns with health data
+    └── Complex onboarding causing drop-off</code></pre>
+  <div class="answer"><strong>Answer: Custom themes</strong><p>Custom themes look appropriate for a consumer mobile app, but there is no evidence that users asked for them or that they improve hydration, retention, or revenue. Until research connects customization to a meaningful outcome, the feature has no strategic weight.</p></div>
+</section>
+
+<section>
+  <h2>3. V3 Discovery Mind Map</h2>
+  <pre><code>Water Tracking App
+├── 1. Core User Jobs-To-Be-Done (JTBD)
+│   ├── Functional Jobs
+│   │   ├── Remember to drink regularly
+│   │   ├── Know whether I have had enough today
+│   │   ├── Build a consistent hydration habit
+│   │   └── Track progress with minimal effort
+│   ├── Emotional Jobs
+│   │   ├── Feel healthy and in control
+│   │   ├── Reduce guilt about neglecting health
+│   │   └── Feel productive and energized
+│   └── Social Jobs
+│       ├── Demonstrate a healthy lifestyle
+│       └── Participate in wellness activities
+├── 2. Current Friction Points
+│   ├── Forgetfulness
+│   │   ├── Meetings
+│   │   ├── Deep-work sessions
+│   │   └── Travel and commuting
+│   ├── Logging Friction
+│   │   ├── App takes too long
+│   │   ├── Too many taps
+│   │   └── Manual entry is required
+│   ├── Goal Friction
+│   │   ├── Generic daily targets
+│   │   ├── No adaptation to weather or activity
+│   │   └── Low trust in recommendations
+│   └── Motivation Friction
+│       ├── Early enthusiasm fades
+│       ├── Progress feels invisible
+│       └── No immediate reward
+├── 3. Feature Ideas by Impact vs. Effort
+│   ├── High Impact / Low Effort
+│   │   ├── One-tap logging
+│   │   ├── Smart reminder scheduling
+│   │   ├── Home-screen widget
+│   │   ├── Daily progress ring
+│   │   └── Streak counter
+│   ├── High Impact / High Effort
+│   │   ├── Smartwatch integration
+│   │   ├── AI habit prediction
+│   │   ├── Personalized hydration goals
+│   │   └── Context-aware reminders
+│   ├── Low Impact / Low Effort
+│   │   ├── Themes
+│   │   ├── Avatars
+│   │   └── Additional badge designs
+│   └── Low Impact / High Effort
+│       ├── Full social network
+│       ├── Community feed
+│       └── Virtual pet ecosystem
+├── 4. Monetization Paths
+│   ├── Freemium
+│   │   ├── Free tracking
+│   │   ├── Premium insights
+│   │   └── Advanced coaching
+│   ├── Subscription
+│   │   ├── Recurring revenue
+│   │   └── Risk: perceived value may be too low
+│   ├── Wellness Partnerships
+│   │   ├── Employer wellness programs
+│   │   ├── Corporate subscriptions
+│   │   └── Tradeoff: longer sales cycles
+│   ├── Device Partnerships
+│   │   ├── Smart-bottle integrations
+│   │   └── Tradeoff: dependency on partners
+│   └── Advertising
+│       ├── Low access barrier for users
+│       └── Tradeoff: potential damage to trust and experience
+├── 5. Retention Risks and Responses
+│   ├── Users stop logging
+│   │   └── Reduce logging friction
+│   ├── Reminders become annoying
+│   │   └── Adapt reminder frequency
+│   ├── The habit forms and the app is no longer needed
+│   │   └── Explore adjacent wellness value
+│   ├── Users do not perceive ongoing value
+│   │   └── Make progress and trends visible
+│   └── No emotional engagement
+│       └── Celebrate meaningful progress
+└── Strategic Tensions to Debate
+    ├── Simplicity vs. Engagement
+    │   ├── Minimal tracker
+    │   └── Gamified experience
+    ├── Privacy vs. Personalization
+    │   ├── Limited data collection
+    │   └── Better recommendations
+    ├── Habit Formation vs. Retention
+    │   ├── Product success may reduce app usage
+    │   └── The business benefits from continued usage
+    └── Consumer vs. B2B Wellness Strategy
+        ├── Faster direct user growth
+        └── Higher-value enterprise revenue</code></pre>
+  <h3>Strategic Tensions to Debate</h3>
+  <div class="grid">
+    <div class="tension"><strong>Simplicity vs. engagement</strong><br>How much motivation can be added before the app becomes distracting?</div>
+    <div class="tension"><strong>Privacy vs. personalization</strong><br>Better recommendations require more context, but health-related data increases trust and privacy concerns.</div>
+    <div class="tension"><strong>Habit formation vs. retention</strong><br>If the product succeeds, users may need it less. Is success frequent usage or lasting behavior change?</div>
+    <div class="tension"><strong>Consumer vs. B2B</strong><br>Consumer growth may be faster, while employer programs may offer stronger revenue with longer sales cycles.</div>
+  </div>
+</section>
+
+<section>
+  <h2>4. V3 Compared With the Step 1 Baseline</h2>
+  <div class="grid">
+    <div class="callout"><strong>Step 1 asks:</strong><br>“What can we build?”</div>
+    <div class="callout"><strong>V3 asks:</strong><br>“Why should we build it?”</div>
+  </div>
+  <h3>What changed?</h3>
+  <p>The baseline mainly listed solutions. V3 begins with user jobs, behavioral friction, impact and effort, monetization, retention, and strategic tradeoffs.</p>
+  <h3>Is V3 objectively better?</h3>
+  <p><strong>Yes, for product discovery and roadmap decisions.</strong> It connects ideas to outcomes, distinguishes bets from distractions, exposes risks and tradeoffs, and creates testable assumptions for research.</p>
+  <ul>
+    <li><strong>AI habit prediction</strong> is exposed as a high-effort investment that needs evidence.</li>
+    <li><strong>Themes</strong> are classified as low impact rather than treated like core reminders.</li>
+    <li><strong>Retention risks</strong> become visible before implementation.</li>
+  </ul>
+  <h3>Did the AI get smarter?</h3>
+  <p><strong>Not necessarily.</strong> The output improved because the prompt introduced Jobs-to-be-Done, user friction, effort vs. impact, monetization, retention, and strategic tradeoffs. These frameworks required business relevance instead of a longer feature list.</p>
+</section>
+
+<section>
+  <h2>5. Key Takeaway: PM Thinks, AI Executes</h2>
+  <div class="takeaway">AI generates and organizes options. The PM decides which problem matters, which framework to apply, what success means, and which tradeoffs are acceptable.</div>
+  <table>
+    <thead><tr><th>Product Manager</th><th>AI</th></tr></thead>
+    <tbody>
+      <tr><td>Defines the problem</td><td>Generates options</td></tr>
+      <tr><td>Selects the decision framework</td><td>Structures content within it</td></tr>
+      <tr><td>Defines success and evidence</td><td>Expands and compares possibilities</td></tr>
+      <tr><td>Identifies meaningful tradeoffs</td><td>Accelerates analysis</td></tr>
+      <tr><td>Owns prioritization and decisions</td><td>Executes the requested work</td></tr>
+    </tbody>
+  </table>
+  <p class="takeaway">The PM defines the analysis worth doing. The AI executes that analysis quickly and at scale.</p>
+</section>
+<footer>Strategic Discovery Map · Module 1</footer>
+</main>
+</body>
+</html>
