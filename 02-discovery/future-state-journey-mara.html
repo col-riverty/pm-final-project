@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future State Journey: Mara’s Self-Service Instalment Experience</title>
+  <style>
+    :root {
+      --navy: #18324a;
+      --blue: #2878b5;
+      --cyan: #39a6a3;
+      --cream: #f6f8fb;
+      --white: #ffffff;
+      --muted: #607284;
+      --line: #d9e3ec;
+      --shadow: 0 10px 28px rgba(24, 50, 74, 0.10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--navy);
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      line-height: 1.4;
+    }
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 24px auto;
+      background: var(--white);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    header {
+      padding: 34px 42px 28px;
+      background: linear-gradient(125deg, #18324a 0%, #245b7b 62%, #2c8c8a 100%);
+      color: white;
+    }
+    header h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: -0.4px; }
+    header p { margin: 5px 0; max-width: 900px; color: #e5f1f7; }
+    .strategy { font-weight: 700; color: white; }
+    main { padding: 30px 42px 38px; }
+    h2 { margin: 0 0 18px; font-size: 20px; }
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      position: relative;
+      margin-bottom: 28px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 8%;
+      right: 8%;
+      height: 3px;
+      background: var(--line);
+      z-index: 0;
+    }
+    .stage {
+      position: relative;
+      z-index: 1;
+      padding: 0 0 18px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(24, 50, 74, 0.07);
+      overflow: hidden;
+    }
+    .stage-head { padding: 14px 16px 12px; background: #eef6fa; min-height: 86px; }
+    .number {
+      width: 30px; height: 30px; display: inline-grid; place-items: center;
+      border-radius: 50%; background: var(--blue); color: white; font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .stage h3 { margin: 0; font-size: 17px; }
+    .stage-body { padding: 14px 16px 2px; }
+    .item { margin: 0 0 14px; }
+    .label {
+      display: block; margin-bottom: 3px; color: var(--muted);
+      font-size: 11px; font-weight: 800; letter-spacing: .7px; text-transform: uppercase;
+    }
+    .item p { margin: 0; font-size: 14px; }
+    .arrow { color: var(--cyan); font-weight: 900; }
+    .advantages {
+      background: #f0f8f7;
+      border: 1px solid #cce7e4;
+      border-radius: 18px;
+      padding: 20px 22px;
+    }
+    .advantages h2 { margin-bottom: 12px; }
+    .advantages ol {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: advantage;
+    }
+    .advantages li {
+      counter-increment: advantage;
+      background: white;
+      border-radius: 14px;
+      padding: 14px 15px;
+      font-size: 14px;
+    }
+    .advantages li::before {
+      content: counter(advantage);
+      display: inline-grid; place-items: center;
+      width: 24px; height: 24px; margin-right: 7px;
+      border-radius: 50%; background: var(--cyan); color: white; font-weight: 800;
+    }
+    @media (max-width: 900px) {
+      .timeline, .advantages ol { grid-template-columns: 1fr 1fr; }
+      .timeline::before { display: none; }
+    }
+    @media (max-width: 600px) {
+      .page { width: 100%; margin: 0; border-radius: 0; }
+      header, main { padding-left: 22px; padding-right: 22px; }
+      .timeline, .advantages ol { grid-template-columns: 1fr; }
+    }
+    @media print {
+      @page { size: A4 landscape; margin: 8mm; }
+      body { background: white; }
+      .page { width: 100%; margin: 0; box-shadow: none; border-radius: 0; }
+      header { padding: 18px 24px 14px; }
+      header h1 { font-size: 24px; }
+      main { padding: 18px 24px; }
+      .stage-head { min-height: 70px; }
+      .stage-body { padding: 10px 12px 0; }
+      .item { margin-bottom: 10px; }
+      .item p, .advantages li { font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header>
+      <h1>Future State Journey: Mara’s Self-Service Instalment Experience</h1>
+      <p><strong>Persona:</strong> Mara, 38, the Consumer</p>
+      <p><strong>Goal:</strong> Resolve her claims independently through a simple, trustworthy, flexible self-service journey.</p>
+      <p class="strategy">Strategy: Reclaim operational simplicity by removing legacy noise and becoming fastest for everyday work.</p>
+    </header>
+
+    <main>
+      <h2>One-Page Visual Timeline</h2>
+      <section class="timeline" aria-label="Four-stage future-state journey">
+        <article class="stage">
+          <div class="stage-head"><span class="number">1</span><h3>Understand Eligibility</h3></div>
+          <div class="stage-body">
+            <div class="item"><span class="label">User Action</span><p>Open claims overview <span class="arrow">→</span> See eligible claims and available options instantly.</p></div>
+            <div class="item"><span class="label">Internal State</span><p>Understand clear choices <span class="arrow">→</span> Feel confident enough to continue independently.</p></div>
+            <div class="item"><span class="label">Pain Point Addressed</span><p>Replace unclear eligibility <span class="arrow">→</span> Prevent redirects, uncertainty, and early abandonment.</p></div>
+          </div>
+        </article>
+
+        <article class="stage">
+          <div class="stage-head"><span class="number">2</span><h3>Personalize the Plan</h3></div>
+          <div class="stage-body">
+            <div class="item"><span class="label">User Action</span><p>Adjust instalment amount <span class="arrow">→</span> Receive affordable, valid options immediately.</p></div>
+            <div class="item"><span class="label">Internal State</span><p>Compare transparent scenarios <span class="arrow">→</span> Feel informed and financially in control.</p></div>
+            <div class="item"><span class="label">Pain Point Addressed</span><p>Explain amounts and consequences <span class="arrow">→</span> Eliminate external research and support calls.</p></div>
+          </div>
+        </article>
+
+        <article class="stage">
+          <div class="stage-head"><span class="number">3</span><h3>Confirm the Arrangement</h3></div>
+          <div class="stage-body">
+            <div class="item"><span class="label">User Action</span><p>Review and approve digitally <span class="arrow">→</span> Create the arrangement within minutes.</p></div>
+            <div class="item"><span class="label">Internal State</span><p>Receive clear confirmation <span class="arrow">→</span> Trust that both claims are correctly managed.</p></div>
+            <div class="item"><span class="label">Pain Point Addressed</span><p>Stabilize submission and validation <span class="arrow">→</span> Prevent errors, restarts, and payment drop-off.</p></div>
+          </div>
+        </article>
+
+        <article class="stage">
+          <div class="stage-head"><span class="number">4</span><h3>Stay on Track</h3></div>
+          <div class="stage-body">
+            <div class="item"><span class="label">User Action</span><p>Resume and monitor payments <span class="arrow">→</span> Manage changes without repeating information.</p></div>
+            <div class="item"><span class="label">Internal State</span><p>Track progress and consequences <span class="arrow">→</span> Remain confident after setup.</p></div>
+            <div class="item"><span class="label">Pain Point Addressed</span><p>Preserve progress across sessions <span class="arrow">→</span> Prevent timeouts, abandonment, and agent escalation.</p></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="advantages">
+        <h2>Competitive Advantages over the Manual Workaround</h2>
+        <ol>
+          <li><strong>Instant clarity</strong> → Faster completion than Google research, phone calls, or email exchanges.</li>
+          <li><strong>Guided flexibility</strong> → Higher confidence without spreadsheets, guesswork, or repeated explanations.</li>
+          <li><strong>Reliable self-service</strong> → Higher conversion with lower agent workload and cost per claim.</li>
+        </ol>
+      </section>
+    </main>
+  </article>
+</body>
+</html>
