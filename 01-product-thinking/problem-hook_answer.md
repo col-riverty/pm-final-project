@@ -8,6 +8,6 @@
 - **Value proposition, based on the proposed initiative (Spotlight or Velocity), what is the new value and why is it urgent to launch now?:** By empowering consumers to resolve their claims independently through a seamless self-service experience, Riverty can increase payment recovery rates, reduce servicing costs, and strengthen trust with both consumers and clients. Launching this initiative now is critical to prevent revenue loss and growing operational inefficiencies.
 
 ## Cold-read your own hook
-- **Is the business risk high enough to justify a new initiative, a high-stakes threat, or a minor inconvenience?:** The risk justify a new initiative
-- **Is the moment of misery a systemic problem or just an edge case?:** it is a systemic problem
-- **Does the value proposition actually remove the obstacle you identified, or is it a generic feature?:** yes it do but the solution will takes time to
+- **Is the business risk high enough to justify a new initiative, a high-stakes threat, or a minor inconvenience?:** Yes. Low (or slipping) revenue and profitability on a large volume  of claims, if not addressed, is substancial financial risk for Riverty.
+- **Is the moment of misery a systemic problem or just an edge case?:** Looking at the original conversion rate, it's systemic.
+- **Does the value proposition actually remove the obstacle you identified, or is it a generic feature?:** It does not solve the problem in one go, but it provides a stragetic framework to implement, measure and iterate concrete features continuously.
