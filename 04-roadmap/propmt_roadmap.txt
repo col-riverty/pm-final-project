@@ -1,0 +1,80 @@
+The “Senior PM” scoring prompt Act as a Senior Product Manager at Scenario C Consumer Resolution Velocity. Score each feature
+for the resolution Velocity initiative using the Effort vs. Value framework.
+
+Strategic Anchors:
+- Persona: Consumers with stable income and opened cases
+- Primary Metric: Digital Resolution Rate
+- Moment of Misery: Consumers Abandoning Resolution Flow
+- Guardrail: Monthly Active Consumers
+
+Constraints:  Team Size 4 Person 3 developers a QS + 2 Weeks sprints + quartely road map planing 4
+
+For each feature give:
+- Value (1 to 5): 1 = negligible impact, 5 = directly moves my Primary Metric
+- Effort (1 to 5): 1 = days of engineering, 5 = months / high complexity
+- Quadrant: Quick Win / Major Project / Fill-In / Time Sinker
+- Rationale: one sentence based on my specific anchors
+
+Be ruthless. Favour the persona's core friction over Sales or Engineering preferences.
+Score the following features: ​‌
+#FeatureWhat it doesOrigin
+C1
+AI Claim Explanation
+Converts legal and financial terminology into plain language consumers can understand instantly
+M2 UXR
+C2
+Guided Resolution Wizard
+Step-by-step flow that guides consumers to the best resolution path
+M2 Journey
+C3
+One-Click Payment Plan Setup
+Allows consumers to create and confirm payment plans in a few taps
+M3 Funnel
+C4
+Resolution Progress Tracker
+Visual indicator showing current status and next action required
+M3 Funnel
+C5
+Personalized Resolution Recommendations
+Suggests the fastest and most relevant resolution option based on case context
+M2 Interview
+C6
+Smart Document Upload
+AI-assisted upload and validation of required documents
+M2 UXR
+C7
+Contextual Help & FAQ
+Displays relevant help content directly within the consumer journey
+M3 Search Analytics
+C8
+Proactive Resolution Notifications
+Push notifications for status changes, missing documents, and upcoming deadlines
+M2 Interview
+C9
+Consumer Trust Dashboard
+Displays claim status, payment history, and completed actions in one place
+M2 Journey
+C10
+Search-to-Resolution Experience
+Search results directly launch applicable resolution actions
+M3 Behavior Data
+C11
+AI Chat Resolution Assistant
+Conversational assistant helping consumers resolve issues without contacting support
+M3 Adoption
+C12
+One-Click Dispute Submission
+Simplifies dispute submission with guided information collection
+M2 UXR
+C13
+Resolution Confidence Indicator
+Shows whether the consumer has completed all required steps successfully
+M3 Confidence Metric
+C14
+Mobile-First Self-Service Dashboard
+Core claim, payment, and dispute actions available within two taps
+M2 Journey
+C15
+Support Escalation Assistant
+Transfers context and completed actions when support contact becomes necessary
+CS

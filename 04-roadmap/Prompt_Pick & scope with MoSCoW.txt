@@ -1,0 +1,14 @@
+MoSCoW scoping promptAct as a Senior Product Manager at Riverty Collection. I'm about to write a
+PRD for my selected feature:  Consumer Resolution Velocity.
+
+Use the Persona, Moment of Misery, Primary Metric, and Constraints defined earlier
+to guide your decisions.
+
+List the sub-requirements for this feature in MoSCoW categories:
+- MUST HAVE: One-Click Payment Plan Setup
+- SHOULD HAVE: Guided Resolution Wizard
+- COULD HAVE: Smart Document Upload
+- WON'T HAVE (NOW):  AI Claim Explanation
+
+Be ruthless. Every must-have must directly address the moment of misery. If removing
+it still lets the core persona Consumers with stable income and opened cases it's not a must-have.
