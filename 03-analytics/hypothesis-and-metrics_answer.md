@@ -22,7 +22,7 @@
 - **Persona , role, goal, and the friction you confirmed in the reconciliation steps:** the consumer
 - **Problem you are solving , one sentence describing the specific friction this initiative removes:** Consumers Abandoning Resolution Flow
 - **Strategic outcome , what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Consumer Trust Score
-- **Primary success metric (initiative signal) , the leading indicator that tells you the gap is closing:** Cost per Resolved Claim
+- **Primary success metric (initiative signal) , the leading indicator that tells you the gap is closing:** Digital Resolution Rate
 - **Guardrail metric (product signal) , the metric that must NOT drop; it protects your existing base:** Monthly Active Consumers
 - **Decision window , how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** 6  Months
-- **Draft your full hypothesis sentence , one to three sentences; quote the metric, name the persona, name the outcome:** basde on Self-Service Resolution Rate and Issues Resolved Without Agent Contact, i believe that solving Consumers Abandoning Resolution Flow for cimsers will result in higher Consumer Trust Score , as measured by a 18% reduction in  Cost per  Resolved Claim . i will protect the Monthly Active Consumers and will make a go/no-go decision after 6 Months
+- **Draft your full hypothesis sentence , one to three sentences; quote the metric, name the persona, name the outcome:** based on Self-Service Resolution Rate and Issues Resolved Without Agent Contact, i believe that solving Consumers Abandoning Resolution Flow for condmsers will result in higher Consumer Trust Score , as measured by a 9 pts increaisng in Digital Resolution Rate. i will protect the Monthly Active Consumers and will make a go/no-go decision after 6 Months
