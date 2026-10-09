@@ -12,5 +12,5 @@ It is not secure how much accurate and helpful will be the answer
 see one_click_payment_plan_prd.html
 
 ## Prompt-to-prototype sprint
-- **Where did the prototype reveal a gap in my PRD logic? (what I had to update):** _(not filled in)_
-- **My prototype, as a link or a screenshot (publish or share from your tool; in Lovable that is Share → Share Preview, in Bolt Publish → Web. No share URL? Screenshot the working flow):** _(not filled in)_
+- **Where did the prototype reveal a gap in my PRD logic? (what I had to update):** yes,  the cosumer should be able to save the payment plan
+- **My prototype, as a link or a screenshot (publish or share from your tool; in Lovable that is Share → Share Preview, in Bolt Publish → Web. No share URL? Screenshot the working flow):** https://frictionless-cash.lovable.app/
