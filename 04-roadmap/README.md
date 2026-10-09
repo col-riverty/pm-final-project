@@ -1,66 +1,66 @@
-# 04-roadmap — Ordnerindex (Modul 4)
+# 04-roadmap — Folder index (Module 4)
 
-Modul 4 der Product-School-Abgabe: **Roadmap, PRD & Prototype**. Dateien ohne `_answer` mit leeren Platzhaltern sind **Vorlagen — nicht ausfüllen**. Die Lösung steht in der jeweils zugeordneten `*_answer.md`. Alles andere ist Arbeitsmaterial (Prompts, HTML/PDF, Screenshots).
+Module 4 of the Product School submission: **Roadmap, PRD & Prototype**. Files without `_answer` that still have empty placeholders are **templates — do not fill them in**. The solution lives in the matching `*_answer.md`. Everything else is working material (prompts, HTML/PDF, screenshots).
 
-**Inhalt dieses Ordners:** Scenario C · Consumer Resolution Velocity (Riverty Collection) — nicht Sipworth. Sipworth (Wasser-Tracking für kalendergebundene Büroarbeit) ist die eigene Initiative fürs Gesamtprojekt; hier wurde das Kurs-Szenario durchgearbeitet.
+**What this folder contains:** Scenario C · Consumer Resolution Velocity (Riverty Collection) — not Sipworth. Sipworth (water tracking for calendar-constrained desk work) is the own-initiative product for the overall project; this folder walked through the course scenario.
 
-### Vorlage → Lösung (nicht die Vorlage überschreiben)
+### Template → solution (do not overwrite the template)
 
-| Vorlage (leer lassen) | Lösung (ausgefüllt) |
+| Template (leave empty) | Solution (filled in) |
 |---|---|
 | `roadmap-prd-prototype.md` | `roadmap-prd-prototype_answer.md` |
 | `prd-and-prototype.md` | `prd-and-prototype_answer.md` |
 
-Im Ordner gibt es keine weiteren leeren Lab-Vorlagen.
+There are no other empty lab templates in this folder.
 
 ---
 
-## Wie die Dateien zusammenhängen
+## How the files relate
 
 ```
-Lab 1  Backlog → Scoring-Prompt → Scoring → Roadmap → Lösung: roadmap-prd-prototype_answer.md
-Lab 2  Now-Feature → MoSCoW-Prompt → Scope → PRD (v1/v2) → Prototype-URL → Lösung: prd-and-prototype_answer.md
+Lab 1  Backlog → scoring prompt → scoring → roadmap → solution: roadmap-prd-prototype_answer.md
+Lab 2  Now feature → MoSCoW prompt → scope → PRD (v1/v2) → prototype URL → solution: prd-and-prototype_answer.md
 ```
 
-HTML und PDF mit gleichem Stammnamen sind dasselbe Dokument (Anzeige vs. Druck). Ausnahme: `one_click_payment_plan_prd_v2.pdf` ist byte-identisch mit der v1-PDF, nicht mit der v2-HTML. Zur Roadmap gibt es nur HTML, kein PDF.
+HTML and PDF with the same stem are the same document (on-screen vs. print). Exception: `one_click_payment_plan_prd_v2.pdf` is byte-identical to the v1 PDF, not to the v2 HTML. The roadmap exists as HTML only; there is no PDF twin.
 
 ---
 
-## Lab 1 — Roadmap & Priorisierung (Deliverable 4)
+## Lab 1 — Roadmap & prioritization (Deliverable 4)
 
-| Datei | Rolle | Inhalt | Bezug |
+| File | Role | Contents | Relates to |
 |---|---|---|---|
-| `roadmap-prd-prototype.md` | **Vorlage** Lab 1. Kurs-Template für die Folie „Roadmap, PRD & Prototype“. | **Leer — nicht ausfüllen.** Abschnitte Roadmap / PRD-Snippets / Prototype sind Platzhalter. | Lösung: [`roadmap-prd-prototype_answer.md`](roadmap-prd-prototype_answer.md). |
-| `roadmap-prd-prototype_answer.md` | **Lösung** zu Lab 1 (ausgefülltes Arbeitsblatt). | **Ausgefüllt.** Anker (Persona, Digital Resolution Rate, Abbruch, MAC). Now: C2 Wizard, C3 One-Click Payment, C1 AI Claim Explanation. Cut: C11 Chat, C15 Escalation. | Gegenstück zur Vorlage `roadmap-prd-prototype.md`. Verweist auf Backlog- und Roadmap-HTML. Menschliche Override weicht leicht von der generierten Scoring/Roadmap ab (dort u. a. C6/C4/C13 in NOW). |
-| `consumer_resolution_velocity_backlog.html` | Feature-Backlog C1–C15 plus Themen-Cluster (kein finales Ranking). | **Ausgefüllt.** | Input für Scoring-Prompt und menschliche Quick-Win-Einschätzung. |
-| `consumer_resolution_velocity_backlog.pdf` | Druckexport des Backlogs. | **Ausgefüllt**, Inhalt = HTML. | |
-| `propmt_roadmap.txt` | Prompt „Senior PM Scoring“ (Effort vs. Value). Dateiname: Tippfehler *propmt*. | **Ausgefüllt.** Anker + Constraints + Featureliste C1–C15. | Wird auf den Backlog angewendet; Output ist die Scoring-Datei. |
-| `2026-10-08_Product Management_pm-final-project-main_04_prompt1.png` | Screenshot desselben Scoring-Prompts in der Chat-UI. | **Ausgefüllt** (Prompt-Anfang sichtbar). | Beleg zu `propmt_roadmap.txt`. |
-| `consumer_resolution_velocity_scoring.html` | KI-Scoring aller 15 Features (Value/Effort/Quadrant) plus Tiers. | **Ausgefüllt.** Time Sinker: C11, C15. | Quelle für die Roadmap-Lanes. |
-| `consumer_resolution_velocity_scoring.pdf` | Druckexport des Scorings. | **Ausgefüllt**, Inhalt = HTML. | |
-| `consumer_resolution_velocity_roadmap.html` | Now / Next / Later plus Cut-Liste. | **Ausgefüllt.** NOW u. a. C3, C2, C6, C4, C13, C1. | In der Answer-Datei als Prototype/Roadmap-Screenshot verlinkt. Kein PDF-Zwilling. |
+| `roadmap-prd-prototype.md` | **Template** Lab 1. Course template for the “Roadmap, PRD & Prototype” slide. | **Empty — do not fill in.** Roadmap / PRD snippets / Prototype sections are placeholders. | Solution: [`roadmap-prd-prototype_answer.md`](roadmap-prd-prototype_answer.md). |
+| `roadmap-prd-prototype_answer.md` | **Solution** for Lab 1 (filled worksheet). | **Filled in.** Anchors (persona, Digital Resolution Rate, abandonment, MAC). Now: C2 Wizard, C3 One-Click Payment, C1 AI Claim Explanation. Cut: C11 Chat, C15 Escalation. | Counterpart to template `roadmap-prd-prototype.md`. Points to backlog and roadmap HTML. The human override differs slightly from the generated scoring/roadmap (those put C6/C4/C13 in NOW). |
+| `consumer_resolution_velocity_backlog.html` | Feature backlog C1–C15 plus theme clusters (not a final ranking). | **Filled in.** | Input for the scoring prompt and the human quick-win read. |
+| `consumer_resolution_velocity_backlog.pdf` | Print export of the backlog. | **Filled in**, same content as the HTML. | |
+| `propmt_roadmap.txt` | “Senior PM Scoring” prompt (Effort vs. Value). Filename typo: *propmt*. | **Filled in.** Anchors + constraints + feature list C1–C15. | Applied to the backlog; output is the scoring file. |
+| `2026-10-08_Product Management_pm-final-project-main_04_prompt1.png` | Screenshot of the same scoring prompt in the chat UI. | **Filled in** (start of the prompt visible). | Evidence for `propmt_roadmap.txt`. |
+| `consumer_resolution_velocity_scoring.html` | AI scoring of all 15 features (value/effort/quadrant) plus tiers. | **Filled in.** Time sinkers: C11, C15. | Source for the roadmap lanes. |
+| `consumer_resolution_velocity_scoring.pdf` | Print export of the scoring. | **Filled in**, same content as the HTML. | |
+| `consumer_resolution_velocity_roadmap.html` | Now / Next / Later plus cut list. | **Filled in.** NOW includes C3, C2, C6, C4, C13, C1. | Linked from the answer file as the prototype/roadmap screenshot. No PDF twin. |
 
 ---
 
-## Lab 2 — PRD & Prototype-Sprint
+## Lab 2 — PRD & prototype sprint
 
-| Datei | Rolle | Inhalt | Bezug |
+| File | Role | Contents | Relates to |
 |---|---|---|---|
-| `prd-and-prototype.md` | **Vorlage** Lab 2. Kurs-Template zum Now-Feature aus Lab 1. | **Leer — nicht ausfüllen.** Alle sechs Felder sind Platzhalter. | Lösung: [`prd-and-prototype_answer.md`](prd-and-prototype_answer.md). |
-| `prd-and-prototype_answer.md` | **Lösung** zu Lab 2 (ausgefülltes Arbeitsblatt). | **Weitgehend ausgefüllt.** Now = Consumer Resolution Velocity; Must = One-Click Payment Plan Setup; Should = Wizard; Won’t = AI Claim Explanation (Genauigkeit). PRD-Lücke vs. Brief: Technical Constraints. Prototype-Lücke: Plan speichern. URL: https://frictionless-cash.lovable.app/ | Gegenstück zur Vorlage `prd-and-prototype.md`. Verweist auf `one_click_payment_plan_prd.html`. |
-| `Prompt_Pick & scope with MoSCoW.txt` | Prompt für MoSCoW-Scope vor dem PRD. | **Ausgefüllt.** MUST C3, SHOULD C2, COULD C6, WON’T C1. | Output: MoSCoW-HTML. |
-| `2026-10-08_Product Management_pm-final-project-main_04_prompt2.png` | Screenshot des MoSCoW-Prompts. | **Ausgefüllt** (Prompt-Anfang sichtbar). | Beleg zu `Prompt_Pick & scope with MoSCoW.txt`. |
-| `consumer_resolution_velocity_moscow_scope.html` | MoSCoW mit Sub-Requirements (M1–M7 Eligibility bis Mobile, plus Should/Could/Won’t). | **Ausgefüllt.** | Scope-Grenze für das PRD. |
-| `consumer_resolution_velocity_moscow_scope.pdf` | Druckexport des Scopes. | **Ausgefüllt**, Inhalt = HTML. | |
-| `one_click_payment_plan_prd.html` | Simplified PRD (Product-School-Sample-Look, dunkel). Autor Carlos Olivera, Status Draft. | **Ausgefüllt.** Vision, Metriken, 3 User Stories, 3 Screens, FRs, Constraints, Evals. | In der Answer-Datei als PRD genannt. |
-| `one_click_payment_plan_prd.pdf` | Druckexport von PRD v1. | **Ausgefüllt.** | |
-| `one_click_payment_plan_prd_v2.html` | Zweite PRD-Fassung, helles Layout, inhaltlich gleich, etwas ausführlicher. | **Ausgefüllt.** | Layout-Variante von v1, nicht ein zweites Feature. |
-| `one_click_payment_plan_prd_v2.pdf` | Dateiname legt v2 nahe. | **Identisch mit v1-PDF** (gleicher Hash), nicht Export der v2-HTML. | Für Abgabe die HTML nutzen oder PDF neu erzeugen. |
+| `prd-and-prototype.md` | **Template** Lab 2. Course template for the Now feature from Lab 1. | **Empty — do not fill in.** All six fields are placeholders. | Solution: [`prd-and-prototype_answer.md`](prd-and-prototype_answer.md). |
+| `prd-and-prototype_answer.md` | **Solution** for Lab 2 (filled worksheet). | **Mostly filled in.** Now = Consumer Resolution Velocity; Must = One-Click Payment Plan Setup; Should = Wizard; Won’t = AI Claim Explanation (accuracy). PRD vs. vague brief: technical constraints. Prototype gap: save the payment plan. URL: https://frictionless-cash.lovable.app/ | Counterpart to template `prd-and-prototype.md`. Points to `one_click_payment_plan_prd.html`. |
+| `Prompt_Pick & scope with MoSCoW.txt` | Prompt for MoSCoW scope before the PRD. | **Filled in.** MUST C3, SHOULD C2, COULD C6, WON’T C1. | Output: MoSCoW HTML. |
+| `2026-10-08_Product Management_pm-final-project-main_04_prompt2.png` | Screenshot of the MoSCoW prompt. | **Filled in** (start of the prompt visible). | Evidence for `Prompt_Pick & scope with MoSCoW.txt`. |
+| `consumer_resolution_velocity_moscow_scope.html` | MoSCoW with sub-requirements (M1–M7 eligibility through mobile, plus Should/Could/Won’t). | **Filled in.** | Scope boundary for the PRD. |
+| `consumer_resolution_velocity_moscow_scope.pdf` | Print export of the scope. | **Filled in**, same content as the HTML. | |
+| `one_click_payment_plan_prd.html` | Simplified PRD (Product School sample look, dark). Author Carlos Olivera, status Draft. | **Filled in.** Vision, metrics, 3 user stories, 3 screens, FRs, constraints, evals. | Named as the PRD in the answer file. |
+| `one_click_payment_plan_prd.pdf` | Print export of PRD v1. | **Filled in.** | |
+| `one_click_payment_plan_prd_v2.html` | Second PRD version, light layout, same content, slightly more verbose. | **Filled in.** | Layout variant of v1, not a second feature. |
+| `one_click_payment_plan_prd_v2.pdf` | Filename suggests v2. | **Identical to the v1 PDF** (same hash), not an export of the v2 HTML. | For submission, use the HTML or regenerate the PDF. |
 
 ---
 
-## Hinweise
+## Notes
 
-- Die beiden Vorlagen oben bleiben leer. Lesen und zitieren: die `*_answer.md`.
-- Entscheiden, welche PRD-Fassung gilt (v1 visuell näher am Kurs-Sample; v2-PDF nicht verwenden).
-- Bei einem Sipworth-Final: diese Scenario-C-Artefakte ersetzen, nicht als Sipworth-Roadmap einreichen.
+- The two templates above stay empty. Read and cite the `*_answer.md` files.
+- Decide which PRD version is canonical (v1 is closer to the course sample visually; do not use the v2 PDF).
+- For a Sipworth final: replace these Scenario C artifacts; do not submit them as a Sipworth roadmap.
