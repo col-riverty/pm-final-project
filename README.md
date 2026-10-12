@@ -4,6 +4,8 @@
 
 This is a **template repo**. Click **Use this template → Create a new repository**, name it something like `pm-final-project`, and fill in one folder per module as you go. This is an **individual project**: your work is yours alone.
 
+**Naming:** official `name.md` = the filled **solution**. Matching `name_template.md` = the **empty course template** (leave it empty). Do not overwrite a template with a solution.
+
 ---
 
 ## Deliverables at a glance
@@ -39,20 +41,29 @@ ___
 pm-final-project/
 ├── README.md                              ← this dashboard
 ├── 01-product-thinking/
-│   ├── strategic-map.md                   ← M1 lab 1: strategic discovery map
-│   └── problem-hook.md                    ← M1 lab 2: problem hook + value prop ★ Deliverable 1
+│   ├── strategic-map.md                   ← M1 lab 1 solution
+│   ├── strategic-map_template.md          ← empty template
+│   ├── problem-hook.md                    ← M1 lab 2 solution ★ Deliverable 1
+│   └── problem-hook_template.md           ← empty template
 ├── 02-discovery/
-│   ├── ai-synthesis.md                    ← M2 lab 1: product health & insights summary
-│   └── competitive-and-journey.md         ← M2 lab 2: workaround + journey map ★ Deliverable 2
+│   ├── ai-synthesis.md                    ← M2 lab 1 solution
+│   ├── ai-synthesis_template.md           ← empty template
+│   ├── competitive-and-journey.md         ← M2 lab 2 solution ★ Deliverable 2
+│   └── competitive-and-journey_template.md← empty template
 ├── 03-analytics/
-│   └── hypothesis-and-metrics.md          ← M3: hypothesis + success metrics ★ Deliverable 3
+│   ├── hypothesis-and-metrics.md          ← M3 solution ★ Deliverable 3
+│   └── hypothesis-and-metrics_template.md ← empty template
 ├── 04-roadmap/
-│   ├── roadmap-prd-prototype.md           ← M4 lab 1: roadmap + prioritization ★ Deliverable 4
-│   └── prd-and-prototype.md               ← M4 lab 2: PRD + prototype
+│   ├── README.md                          ← folder index (official = solution, _template = empty)
+│   ├── roadmap-prd-prototype.md           ← M4 lab 1 solution ★ Deliverable 4
+│   ├── roadmap-prd-prototype_template.md  ← empty template
+│   ├── prd-and-prototype.md               ← M4 lab 2 solution
+│   └── prd-and-prototype_template.md      ← empty template
 ├── 05-experimentation/
 │   └── experimentation-plan.md            ← M5: experimentation plan          ★ Deliverable 5
 └── 06-launch/
-    ├── gtm-and-dashboard.md               ← M6: GTM plan + success dashboard  ★ Deliverable 6
+    ├── gtm-and-dashboard.md               ← M6 solution ★ Deliverable 6
+    ├── gtm-and-dashboard_template.md      ← empty template
     ├── individual-insights.md             ← M6: friction, learnings, aha
     └── final-presentation.md              ← M6: how to build & submit the deck ★ Final submission
 ```
