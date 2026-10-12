@@ -1,0 +1,220 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Senior PM Review - A/B Experiment Brief</title><style>:root{--navy:#0b1f3a;--blue:#2563eb;--ink:#172033;--line:#d8e1ec;--bg:#f3f6fa;--red:#b42318}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Segoe UI,Arial,sans-serif;line-height:1.62}main{max-width:1060px;margin:32px auto;padding:36px 42px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 35px rgba(20,40,70,.08)}h1{margin:0 0 10px;padding-bottom:15px;border-bottom:5px solid var(--blue);color:var(--navy);font-size:2.25rem}h2{margin-top:2.4rem;color:var(--navy);font-size:1.55rem}h3{margin-top:1.55rem;color:#174ea6}h4{color:#315a91}p{margin:.65rem 0}ul,ol{padding-left:1.5rem}li{margin:.35rem 0}blockquote{margin:1rem 0;padding:16px 19px;border-left:5px solid var(--blue);border-radius:9px;background:#edf4ff;font-weight:600}code{padding:2px 6px;background:#eef2f7;border-radius:5px;color:#17365d}table{width:100%;border-collapse:collapse;margin:16px 0}th,td{padding:11px 13px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--navy);color:#fff}tr:nth-child(even) td{background:#f8fafd}hr{border:0;border-top:1px solid var(--line);margin:30px 0}@media(max-width:720px){main{margin:0;padding:22px 17px;border:0;border-radius:0}h1{font-size:1.75rem}table{font-size:.85rem}}@media print{body{background:#fff}main{max-width:none;margin:0;padding:0;border:0;box-shadow:none}}</style></head><body><main><h1>Senior PM Review: A/B Experiment Brief</h1>
+<h2>Scenario</h2>
+<p><strong>Riverty business-unit case · One-Click Payment Plan Setup</strong></p>
+<h2>Senior PM Verdict</h2>
+<blockquote><strong>Do not launch this brief unchanged.</strong> The hypothesis is directionally strong, but the variant bundles multiple experience changes, the guardrail is underspecified, and the proposed sample of <strong>36,200 per arm</strong> appears drastically oversized for detecting a move from <strong>31% to 45%</strong>.</blockquote>
+<hr>
+<h2>1. Is the Variant Exactly One Change?</h2>
+<h3>Finding: No, it bundles at least four changes</h3>
+<p>The variant simultaneously introduces:</p>
+<ol>
+<li>Two to three predefined plan options</li>
+<li>A real-time repayment summary</li>
+<li>A simplified, explicit confirmation action</li>
+<li>An immediate, enriched success screen</li>
+</ol>
+<p>That creates an <strong>attribution problem</strong>. If completion improves, you will know that the new end-to-end experience worked, but not which component caused the improvement.</p>
+<h3>Recommendation</h3>
+<p>Decide what kind of experiment this is.</p>
+<h4>Option A: Test the Complete Experience</h4>
+<p>Use this if the shipping decision is binary: replace the existing journey with the complete One-Click experience or do not replace it.</p>
+<p>Rename the intervention clearly:</p>
+<blockquote><strong>Bundled end-to-end payment-plan journey redesign</strong></blockquote>
+<p>This is valid, but you must not claim that “one-click confirmation” alone caused any lift.</p>
+<h4>Option B: Isolate the Core Hypothesis</h4>
+<p>Preferred if you want actionable learning.</p>
+<ul>
+<li><strong>Control:</strong> Existing payment-plan experience.</li>
+<li><strong>Variant:</strong> Same eligibility logic, options, summary, and success screen as Control, but with the existing confirmation sequence replaced by one explicit confirmation action.</li>
+</ul>
+<p>Then test the other components in later experiments.</p>
+<h3>Senior PM Recommendation</h3>
+<p>For a high-fidelity prototype, test the complete journey. For a production A/B test, isolate the confirmation and step-reduction change wherever technically feasible.</p>
+<hr>
+<h2>2. Does the Primary Metric Measure the Moment of Misery?</h2>
+<h3>Finding: Partially</h3>
+<p><strong>Payment-plan flow completion rate</strong> measures the desired final outcome. It tells you whether eligible consumers reached active confirmation.</p>
+<p>But the Moment of Misery is:</p>
+<blockquote>Consumers abandoning the resolution flow.</blockquote>
+<p>Completion and abandonment are related, but not identical. A completion increase could coexist with unchanged abandonment if, for example:</p>
+<ul>
+<li>more users enter the flow;</li>
+<li>some users take longer but eventually complete;</li>
+<li>traffic quality changes;</li>
+<li>consumers leave through an alternative route.</li>
+</ul>
+<h3>Recommended Metric Hierarchy</h3>
+<h4>Primary Metric</h4>
+<blockquote><strong>Eligible payment-plan completion rate:</strong> Percentage of eligible, assigned consumers who reach a valid active payment-plan confirmation state within the defined experiment window.</blockquote>
+<p>Use assigned eligible consumers as the denominator, not only consumers who select a plan. This avoids excluding people who abandon early.</p>
+<h4>Key Secondary Metric</h4>
+<blockquote><strong>Payment-plan abandonment rate:</strong> Percentage of eligible consumers who enter the payment-plan flow but leave without reaching valid confirmation within the defined abandonment window.</blockquote>
+<h4>Diagnostic Funnel</h4>
+<p>Track progression through:</p>
+<ul>
+<li>Entry point viewed</li>
+<li>Plan selected</li>
+<li>Confirmation started</li>
+<li>Confirmation succeeded</li>
+<li>Confirmation failed</li>
+<li>Flow abandoned</li>
+</ul>
+<p>This reveals where the variant removes friction.</p>
+<hr>
+<h2>3. Is the Primary Metric Distinct From the Guardrail?</h2>
+<h3>Finding: Yes conceptually, but the guardrail is not operationally defined</h3>
+<p>The distinction is valid:</p>
+<ul>
+<li><strong>Primary metric:</strong> Payment-plan flow completion</li>
+<li><strong>Guardrail:</strong> Monthly Active Consumers</li>
+</ul>
+<p>However, Monthly Active Consumers may be too broad and slow-moving to protect this particular journey. A payment-plan experiment may affect only a small fraction of total monthly users, so even a harmful experience might not visibly move organization-wide MAU.</p>
+<h3>Define MAU Precisely</h3>
+<p>Specify:</p>
+<ul>
+<li>eligible population or whole portal;</li>
+<li>unique-user definition;</li>
+<li>calendar or rolling-month calculation;</li>
+<li>allowed decrease;</li>
+<li>statistical rule;</li>
+<li>treatment-window handling.</li>
+</ul>
+<h3>Add a Local Guardrail</h3>
+<p>Use one guardrail close to the intervention:</p>
+<blockquote><strong>Support-contact-after-flow rate must not increase.</strong></blockquote>
+<p>Or:</p>
+<blockquote><strong>Confirmation-error rate must remain below a predefined threshold.</strong></blockquote>
+<p>For this financial journey, also use a zero-tolerance safety guardrail:</p>
+<ul>
+<li>no incorrect installment amount;</li>
+<li>no mismatched repayment total;</li>
+<li>no unsupported eligibility outcome;</li>
+<li>no false success confirmation.</li>
+</ul>
+<h3>Recommended Guardrail Set</h3>
+<ol>
+<li><strong>Engagement guardrail:</strong> Eligible-consumer return rate or eligible-population MAU</li>
+<li><strong>Journey guardrail:</strong> Support-contact-after-flow rate or confirmation-error rate</li>
+<li><strong>Safety guardrail:</strong> Zero invalid financial confirmations</li>
+</ol>
+<hr>
+<h2>4. Is the Sample Size and Duration Realistic?</h2>
+<h3>Finding: The proposed sample is almost certainly oversized for the stated MDE</h3>
+<p>A two-proportion experiment requires the baseline rate, target rate, significance level, and statistical power. Using:</p>
+<ul>
+<li><strong>Baseline:</strong> 31%</li>
+<li><strong>Target:</strong> 45%</li>
+<li><strong>Absolute MDE:</strong> 14 percentage points</li>
+<li><strong>Two-sided alpha:</strong> 0.005</li>
+<li><strong>Equal allocation:</strong> 50% / 50%</li>
+</ul>
+<p>The approximate requirement is:</p>
+<table><thead><tr><th>Statistical power</th><th>Approximate sample per arm</th></tr></thead><tbody>
+<tr><td>80%</td><td>319</td></tr>
+<tr><td>90%</td><td>400</td></tr>
+</tbody></table>
+<p>The proposed <strong>36,200 per arm</strong> is more than 90 times the approximate 90%-power requirement for that large effect.</p>
+<h3>Important Caveat</h3>
+<p>The exact requirement can increase because of:</p>
+<ul>
+<li>repeated exposure or non-independent observations;</li>
+<li>variance adjustment;</li>
+<li>attrition;</li>
+<li>sample-ratio imbalance;</li>
+<li>sequential testing;</li>
+<li>multiple comparisons;</li>
+<li>cluster randomization;</li>
+<li>imperfect event capture.</li>
+</ul>
+<p>But none of those factors normally explains a jump from roughly 400 to 36,200 per arm without an additional unstated assumption.</p>
+<h3>Duration Feasibility</h3>
+<p>To gather 36,200 consumers per arm in 30 days, you need:</p>
+<ul>
+<li><strong>72,400 eligible consumers in total</strong></li>
+<li>approximately <strong>2,414 eligible consumers per day</strong></li>
+</ul>
+<p>The information provided does not establish whether that traffic exists. Therefore, the 30-day duration is not yet justified.</p>
+<h3>Required Correction</h3>
+<p>Add the missing power assumption and recompute sample size using:</p>
+<ul>
+<li>baseline;</li>
+<li>minimum worthwhile effect;</li>
+<li>significance threshold;</li>
+<li>statistical power;</li>
+<li>unit of randomization;</li>
+<li>expected eligible daily traffic;</li>
+<li>expected exclusions or data loss.</li>
+</ul>
+<h3>Strategic Challenge</h3>
+<p>A 14-point MDE is extremely ambitious relative to a 31% baseline. It represents roughly a <strong>45% relative lift</strong>.</p>
+<p>Ask:</p>
+<blockquote>Would we reject the feature if it increased completion from 31% to 38%?</blockquote>
+<p>If the answer is no, then 14 points is not the real minimum worthwhile effect. Set the MDE to the smallest lift that would genuinely justify shipping, then recalculate the sample.</p>
+<hr>
+<h2>5. Are the Shipping Criteria a Real Decision Rule?</h2>
+<h3>Finding: Not yet</h3>
+<p>The current logic leaves several ambiguities:</p>
+<ul>
+<li>whether the test is one-sided or two-sided;</li>
+<li>required statistical power;</li>
+<li>what “protect MAU” numerically means;</li>
+<li>whether abandonment is a formal guardrail;</li>
+<li>how safety failures affect the decision;</li>
+<li>treatment of sample-ratio mismatch;</li>
+<li>treatment of missing events;</li>
+<li>whether the decision uses absolute or relative lift;</li>
+<li>whether reaching 45% is required, or merely beating Control significantly.</li>
+</ul>
+<h2>Rewritten Decision Rule</h2>
+<h3>Ship</h3>
+<p>Ship the variant only if, at the fixed 30-day read:</p>
+<ol>
+<li>At least the prespecified valid sample has been collected in both arms.</li>
+<li>No sample-ratio mismatch or material instrumentation defect invalidates the experiment.</li>
+<li>Variant payment-plan completion exceeds Control by at least the prespecified absolute MDE.</li>
+<li>The primary result meets the prespecified two-sided threshold of <code>p &lt; 0.005</code>.</li>
+<li>Payment-plan abandonment does not exceed Control.</li>
+<li>The defined engagement guardrail does not breach its prespecified non-inferiority boundary.</li>
+<li>No critical financial-data safety failure occurs.</li>
+</ol>
+<h3>Iterate</h3>
+<p>Iterate if:</p>
+<ul>
+<li>the primary result is positive and statistically significant but below the business MDE;</li>
+<li>or it meets the MDE but misses the significance threshold;</li>
+<li>or completion improves while a non-critical journey guardrail deteriorates;</li>
+<li>and no critical safety failure occurs.</li>
+</ul>
+<p>A positive direction alone is insufficient.</p>
+<h3>Kill</h3>
+<p>Kill the variant if any of these occurs:</p>
+<ul>
+<li>completion is neutral or negative;</li>
+<li>abandonment increases materially;</li>
+<li>the engagement guardrail breaches its boundary;</li>
+<li>support contact or confirmation errors exceed the predefined threshold;</li>
+<li>a critical safety failure occurs;</li>
+<li>instrumentation or sample-ratio issues make the result uninterpretable.</li>
+</ul>
+<h3>Extend Without Reading</h3>
+<p>Extend the collection period only if:</p>
+<ul>
+<li>the predetermined sample has not been reached;</li>
+<li>the experiment remains operationally safe;</li>
+<li>no outcome data have been reviewed by the decision-makers;</li>
+<li>the maximum extension rule was defined before launch.</li>
+</ul>
+<p>Do not extend merely because the observed result is inconclusive.</p>
+<hr>
+<h1>Recommended Launch-Ready Hypothesis</h1>
+<blockquote>We believe that replacing the existing payment-plan journey with the One-Click Payment Plan Setup experience for eligible consumers with stable income and opened cases will increase the proportion of assigned eligible consumers who reach a valid active payment-plan confirmation state. We will compare the Variant with the existing self-service journey using a prespecified two-sided test at <code>p &lt; 0.005</code>. We will ship only if the Variant achieves the prespecified minimum worthwhile absolute lift, does not increase payment-plan abandonment, remains within the engagement guardrail, and produces no critical financial-data safety failure.</blockquote>
+<h2>Final Assessment</h2>
+<table><thead><tr><th>Area</th><th>Assessment</th></tr></thead><tbody>
+<tr><td>Variant isolation</td><td><strong>Needs revision</strong></td></tr>
+<tr><td>Primary metric</td><td><strong>Good outcome metric, but add abandonment</strong></td></tr>
+<tr><td>Guardrail separation</td><td><strong>Conceptually correct, operationally vague</strong></td></tr>
+<tr><td>Sample size</td><td><strong>Likely heavily oversized</strong></td></tr>
+<tr><td>Duration</td><td><strong>Unproven without eligible traffic data</strong></td></tr>
+<tr><td>Shipping criteria</td><td><strong>Needs hard numerical boundaries</strong></td></tr>
+<tr><td>Launch readiness</td><td><strong>Not ready until these points are resolved</strong></td></tr>
+</tbody></table></main></body></html>
