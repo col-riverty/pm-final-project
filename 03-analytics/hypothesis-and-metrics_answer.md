@@ -8,21 +8,21 @@
 - **Problem Hook , your one-sentence framing of the business crisis (M1):** Willing payers are dropping out of our instalment journey, keeping conversion rates low, increasing cost per claim, reducing revenue, and eroding trust among both consumers and clients.
 - **Value Proposition , the outcome your initiative promised to deliver (M1):** By empowering consumers to resolve their claims independently through a seamless self-service experience, Riverty can increase payment recovery rates, reduce servicing costs, and strengthen trust with both consumers and clients. Launching this initiative now is critical to prevent revenue loss and growing operational inefficiencies.
 
-## Read your data snapshots
-- **Does the funnel data confirm your M2 friction point, or does it tell a different story? Note where the numbers align with the qualitative pain you found and where they diverge.:** _(not filled in)_
-- **Do the retention patterns align with the workaround your M2 persona used to find content? Note what the Mo. 0→1 drop suggests about the onboarding experience your persona described as frustrating.:** _(not filled in)_
-- **Does the LTV gap and the content mix (61% trending for Wanderers) confirm the moment of misery your persona described? Note which segment your persona is in and whether the data confirms their pain.:** _(not filled in)_
-- **Does the low adoption confirm your persona is burdened by tools they don’t use? Note whether the low scheduling adoption (42%) for coordinators matches your M2 moment of misery.:** _(not filled in)_
-- **Does the workflow data match the manual process or hack you documented in M2? Note whether the specific drop-offs or time gaps explain why your persona avoids the digital tool.:** _(not filled in)_
-- **Look at the CSAT heatmap. Which specific cell most directly maps to your persona’s friction? Note how the NPS trend justifies the urgency of your M1 Problem Hook.:** _(not filled in)_
+## Read the evidence in your case
+- **Where does your case say people stall or leave? Does that match the friction you wrote in Module 2?:** The largest drop occurs between starting the self-service flow (49%) and successfully resolving the issue (31%). This matches the Module 2 friction: consumers abandon the resolution journey before completing a successful outcome.
+- **What got better or worse in the case, and does that support the workaround your persona uses?:** Self-Service Resolution Rate improved from 22% to 31%, Support Contact Rate decreased from 58% to 44%, and Resolution Confidence increased from 61% to 72%. This supports the finding that consumers prefer self-service when the journey becomes easier and more trustworthy.
+- **Which user in the case is carrying the pain, and is that the person your Module 2 persona describes?:** The pain is carried by consumers with stable income and opened cases who are eligible for self-service resolution. This aligns directly with the Module 2 persona, Mara (38), who wants to resolve her case independently through a simple and trustworthy digital experience.
 
 ## Step 3 · Craft your hypothesis
-- **Qualitative evidence (from M2) , quote the specific friction / moment of misery for your persona:** Self-Service Resolution Rate
-- **Quantitative evidence (from M3) , name the metric or data point that confirms the pain; cite the number:** Issues Resolved Without Agent Contact
+- **Qualitative evidence (from M2) , quote the specific friction / moment of misery for your persona:** Phone calls
+Email
+Contact forms
+Customer service chat (if available)
+- **Quantitative evidence (from M3) , name the metric or data point that confirms the pain; cite the number:** Digital Resolution Rate
 - **Persona , role, goal, and the friction you confirmed in the reconciliation steps:** Consumers with stable income and opened cases
-- **Problem you are solving , one sentence describing the specific friction this initiative removes:** Consumers Abandoning Resolution Flow
-- **Strategic outcome , what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Consumer Trust Score
-- **Primary success metric (initiative signal) , the leading indicator that tells you the gap is closing:** Digital Resolution Rate
-- **Guardrail metric (product signal) , the metric that must NOT drop; it protects your existing base:** Monthly Active Consumers
-- **Decision window , how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** 6  Months
-- **Draft your full hypothesis sentence , one to three sentences; quote the metric, name the persona, name the outcome:** based on Self-Service Resolution Rate and Issues Resolved Without Agent Contact, i believe that solving Consumers Abandoning Resolution Flow for Consumers with stable income and opened cases will result in higher Consumer Trust Score , as measured by a 9 pts increasing in Digital Resolution Rate. i will protect the Monthly Active Consumers and will make a go/no-go decision after 6 Months
+- **Problem you are solving , one sentence describing the specific friction this initiative removes:** Self-Service Resolution Rate
+- **Strategic outcome , what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Issues Resolved Without Agent Contact
+- **Primary success metric (initiative signal) , the leading indicator that tells you the gap is closing:** Consumers with stable income and opened cases
+- **Guardrail metric (product signal) , the metric that must NOT drop; it protects your existing base:** Consumers Abandoning Resolution Flow
+- **Decision window , how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** Consumer Trust Score
+- **Draft your full hypothesis sentence , one to three sentences; quote the metric, name the persona, name the outcome:** Digital Resolution Rate
